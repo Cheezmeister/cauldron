@@ -1,0 +1,25 @@
+{
+  "name": "testbed",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "live-server dist --port=42069",
+    "build": "gulp",
+    "deploy": "rsync -aivze ssh dist/ gany:www/bml.rocks/www/"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "coffeescript": "^2.5.1",
+    "gulp-coffee": "^3.0.3",
+    "gulp-pug": "^4.0.1",
+    "jstransformer-markdown": "^1.2.1",
+    "jstransformer-stylus": "^1.5.0",
+    "pug": "^3.0.0",
+    "stylus": "^0.54.7",
+    "supermarked": "^2.0.0",
+    "gulp": "^4.0.2"
+  }
+}
