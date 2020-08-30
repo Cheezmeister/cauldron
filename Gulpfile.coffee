@@ -1,23 +1,20 @@
 G = require 'gulp'
 pug = require 'gulp-pug'
 coffee = require 'gulp-coffee'
+styl = require 'gulp-stylus'
 
 G.task 'default', (done) ->
   G
-    .src '*.coffee.md'
+    .src 'src/*.coffee{.md,}'
     .pipe coffee()
     .pipe G.dest 'dist'
-
-  G.src '*.js'
+  G
+    .src 'src/*.styl'
+    .pipe styl()
     .pipe G.dest 'dist'
 
-  G
-    .src 'vendor/**'
+  G.src 'src/*.{js,css}'
     .pipe G.dest 'dist'
-  G
-    .src 'assets/**'
-    .pipe G.dest 'dist/assets'
-
 
 G
-  .watch 'index.jade', G.series 'default'
+  .watch 'src/*', G.series 'default'
