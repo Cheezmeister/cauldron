@@ -1,7 +1,6 @@
 # Cauldron
 
-Simple live-reloading webserver to serve up my user-scripts.
-
+Simple live-reloading webserver to serve up my user-scripts. Includes OOTB support for [CoffeeScript](https://coffeescript.org/) and [Stylus](https://stylus-lang.com/).
 For use with [@luciopaiva/witchcraft](https://github.com/luciopaiva/witchcraft)
 
 # Quickstart
