@@ -1,4 +1,4 @@
-# Cauldron ![License: WTFPL](https://img.shields.io/badge/license-wtfpl-green?link=http://www.wtfpl.net/)
+# Cauldron ![WTFPL](https://img.shields.io/badge/license-WTFPL-green?link=http://www.wtfpl.net/)
 
 Simple live-reloading webserver to serve up my user-scripts. And maybe yours.
 
