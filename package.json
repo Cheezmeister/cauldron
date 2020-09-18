@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "echo 'https://youtu.be/gX0JCVgfAYU'",
+    "build": "gulp",
     "serve": "gulp & live-server dist --port=42069"
   },
   "author": "",
