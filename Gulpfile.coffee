@@ -1,5 +1,4 @@
 G = require 'gulp'
-pug = require 'gulp-pug'
 coffee = require 'gulp-coffee'
 styl = require 'gulp-stylus'
 
