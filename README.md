@@ -10,7 +10,6 @@ Includes OOTB support for:
 * [CoffeeScript](https://coffeescript.org/)
 * [Stylus](https://stylus-lang.com/)
 * [TypeScript](https://www.typescriptlang.org/)
-* [Sass](https://sass-lang.com/)
 
 # Quickstart
 
