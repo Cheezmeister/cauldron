@@ -1,20 +1,28 @@
 # Househunting ergonomics
 
+Make clear listings with "offers due" at any time; fuck that noise.
+
+    results = document.querySelector '#Remarks div span'
+    if results?.innerText.toLowerCase().includes 'offers due'
+      document.body.style.background = '#ffcd82'
 
 Hide listings that aren't new or active.
 
     results = [...document.querySelectorAll('.mls-js-results-row td:nth-child(8)')]
-    console.log(results.map (el) -> el.innerText.trim())
+    console.log(results.map (el) -> el?.innerText.trim())
 
     temp = results.map (el) ->
-      status = el.innerText.trim()
-      unless (['NEW', 'ACT'].includes status)
+      status = el?.innerText.trim()
+      if status == 'BOM'
+        el.parentNode.attributes.bgcolor = undefined
+        el.parentNode.style.background = 'rgb(214 242 255)'
+      unless (['NEW', 'ACT', 'BOM'].includes status)
         el.parentNode.style.opacity = 0.1
 
 Make it easy to grab the address+MLS#
 
     el = document.querySelector('#PrimaryInfo > div')
-    primaryInfo = el.innerText.split('\n')
+    primaryInfo = el?.innerText.split('\n')
     addressAndID = primaryInfo[0] + primaryInfo[14]
     # data = [new ClipboardItem({ "text/plain": new Blob([...addressAndID]) })];
     console.log addressAndID
