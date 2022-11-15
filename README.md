@@ -13,10 +13,11 @@ Includes OOTB support for:
 
 # Quickstart
 
-1. Fork and clone
-2. `yarn && yarn serve`
-3. Point Witchcraft at http://localhost:42069
-4. https://google.com should have a witchy background
-5. Start brewing
+1. Add [Witchcraft](https://luciopaiva.com/witchcraft/how-to-install.html) to Chrom{e,ium}
+2. [Fork](//github.com/Cheezmeister/cauldron/fork) and clone
+3. `yarn && yarn serve`
+4. Point Witchcraft at http://localhost:42069
+5. https://google.com should have a witchy background
+6. Start brewing
 
-You probably want to nuke `src/` unless you want my weird idiosyncracies. Make it your own. <3
+You probably want to nuke `src/` unless you want my weird idiosyncracies. Make it your own. 💕
