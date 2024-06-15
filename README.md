@@ -20,4 +20,4 @@ Includes OOTB support for:
 5. https://google.com should have a witchy background
 6. Start brewing
 
-You probably want to nuke `src/` unless you want my weird idiosyncracies. Make it your own. 💕
+You probably want to nuke `src/` unless you want my idiosyncracies. Make it your own. 💕
